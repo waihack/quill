@@ -189,7 +189,7 @@
             <div class="field">
               <div class="ui checkbox">
                 <input type="checkbox" ng-model="user.confirmation.catFriendly">
-                <label> I would be okay in housing that has cats. Meow! </label>
+                <label> I would be okay in housing that has cats and dogs. Woof Woof, Meow! </label>
               </div>
             </div>
 
@@ -220,7 +220,7 @@
               <li> Up to ~$80 from the south island </li>
             </ul>
             <p>
-              Again, we only reimburse the minimum-cost travel path. Head back to the dashboard to read our full travel policy.
+              Again, we only reimburse the minimum-cost travel path. Head back to the dashboard to read our full travel policy. Make sure you keep your receipts, reimbursements will not be paid out without a recipt.
             </p>
           </div>
 
@@ -240,7 +240,7 @@
             </div>
 
             <p>
-              Travel reimbursement is processed and sent by check after the event. To expedite the reimbursement process and ensure that you receive your reimbursement as quickly as possible, make sure that your mailing address is accurate and you upload your receipts.
+              Travel reimbursement is processed and sent after the event. To expedite the reimbursement process and ensure that you receive your reimbursement as quickly as possible, make sure that your mailing address is accurate.
             </p>
 
             <div class="field">
@@ -275,7 +275,7 @@
                   ng-model="user.confirmation.address.city">
               </div>
               <div class="field">
-                <label> State/Province/Region </label>
+                <label> Region </label>
                 <input
                   type="text"
                   name="state"
@@ -288,26 +288,6 @@
                   name="zip"
                   ng-model="user.confirmation.address.zip">
               </div>
-              <div class="field">
-                <label> Country </label>
-                <input
-                  type="text"
-                  name="country"
-                  ng-model="user.confirmation.address.country">
-              </div>
-            </div>
-
-            <div class="field">
-              <label> Travel Receipt </label>
-              <p>
-                So that we can process your reimbursement faster, please name your receipt: <strong>{{fileName}}</strong>
-              </p>
-              <a
-                target="_blank"
-                href="https://go.hackmit.org/travel-receipts"
-                class="ui pink button">
-                Upload Receipt
-              </a>
             </div>
 
           </div>
@@ -318,32 +298,11 @@
           <div class="divided title">Legal</div>
 
           <div class="field">
-            <label> Liability Waiver </label>
-            <p>
-              <a
-                target="_blank"
-                href="https://go.hackmit.org/liability-waiver">
-                Liability Waiver
-              </a>
-            </p>
-            <p>
-              For legal reasons, our university asks that you read and accept the terms of our liability waiver. Again, as we mentioned in the original application - you <strong> must </strong> be 18 years or older or a Waikato University undergraduate by the day of the event, or <strong> we will refuse you admission at the door. We will be checking ID. </strong>
-            </p>
-            <p>
-              By writing my name below, I affirm that I have read and accepted the terms of the liability waiver above, and will be either a Waikato University undergraduate or 18 years or older at the time of the event.
-            </p>
-            <input type="text"
-                   name="signatureLiabilityWaiver"
-                   placeholder="Your Full Legal Name"
-                   ng-model="user.confirmation.signatureLiability">
-          </div>
-
-          <div class="field">
             <label> Photo Release </label>
             <p>
               <a
                 target="_blank"
-                href="https://go.hackmit.org/photo-release">
+                href="https://docs.google.com/document/d/10tjZrFkOpC1nUBAUmd1eLJ9l3VPEvb2N4IcpVQwsW9I/edit?usp=sharing">
                 Photo Release
               </a>
             </p>
@@ -364,7 +323,7 @@
             <p>
               <a
                 target="_blank"
-                href="https://go.hackmit.org/code-of-conduct">
+                href="https://hackcodeofconduct.org/457-waihack_2017">
                 Hacker Code of Conduct
               </a>
             </p>

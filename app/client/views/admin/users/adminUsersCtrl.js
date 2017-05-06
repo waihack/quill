@@ -280,8 +280,6 @@ angular.module('reg')
                   ',',
                   user.confirmation.address.state,
                   user.confirmation.address.zip,
-                  ',',
-                  user.confirmation.address.country,
                 ].join(' ') : ''
               },{
                 name: 'Additional Notes',
@@ -295,46 +293,3 @@ angular.module('reg')
       $scope.selectUser = selectUser;
 
     }]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
