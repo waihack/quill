@@ -23,16 +23,7 @@
     "passport-local": "^1.0.0",
     "request": "^2.60.0",
     "underscore": "^1.8.3",
-    "validator": "^3.40.1"
-  },
-  "scripts": {
-    "mongo": "mongod --dbpath db",
-    "start": "nodemon app.js",
-    "watch": "gulp server",
-    "prod": "gulp build && node app.js",
-    "config": "cp .env.config .env"
-  },
-  "devDependencies": {
+    "validator": "^3.40.1",
     "gulp": "^3.9.0",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.0",
@@ -42,5 +33,12 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-uglify": "^1.2.0",
     "nodemon": "^1.2.1"
+  },
+  "scripts": {
+    "mongo": "mongod --dbpath db",
+    "start": "nodemon app.js",
+    "watch": "gulp server",
+    "prod": "gulp build && node app.js",
+    "config": "cp .env.config .env"
   }
 }
