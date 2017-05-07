@@ -1,8 +1,8 @@
 require('dotenv').load();
 var mongoose        = require('mongoose');
-var database        = process.env.DATABASE || { url: "mongodb://localhost:27017"};
+var database        = process.env.MONGO_URL || "mongodb://localhost:27017";
 var jwt             = require('jsonwebtoken');
-mongoose.connect(database.url);
+mongoose.connect(database);
 
 var User = require('../app/server/models/User');
 var UserController = require('../app/server/controllers/UserController');
@@ -14,7 +14,7 @@ User.findOne({
 }, function(err, user){
   var id = user._id;
 
-  /* Change with old password */ 
+  /* Change with old password */
   UserController.changePassword(
     id,
     'foobar',

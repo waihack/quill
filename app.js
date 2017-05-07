@@ -11,12 +11,14 @@ var cookieParser    = require('cookie-parser');
 
 var mongoose        = require('mongoose');
 var port            = process.env.PORT || 3000;
-var database        = process.env.DATABASE || "mongodb://localhost:27017";
+var database        = process.env.MONGO_URL || "mongodb://localhost:27017";
 
 var settingsConfig  = require('./config/settings');
 var adminConfig     = require('./config/admin');
 
 var app             = express();
+
+mongoose.Promise = global.Promise;
 
 // Connect to mongodb
 mongoose.connect(database);
@@ -48,4 +50,3 @@ require('./app/server/routes')(app);
 // listen (start app with node server.js) ======================================
 app.listen(port);
 console.log("App listening on port " + port);
-
