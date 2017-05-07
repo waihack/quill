@@ -5,8 +5,8 @@ $font-header: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
 
 // Login screen variables
 $login-bg-color: $secondary;
-$login-color: $primary;
-$register-color: $tertiary;
+$login-color: #525252;
+$register-color: #525252;
 
 $status-unverified-color: rgb(82, 82, 82);
 $status-incomplete-color: #F5F5F5;
@@ -55,6 +55,11 @@ body {
   height: 100%;
   width: 100%;
   font-size: 1.02em;
+}
+
+@font-face {
+  font-family: edunline;
+  src: url('/assets/edunline.ttf');
 }
 
 body {

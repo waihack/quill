@@ -1,9 +1,34 @@
 #login {
   height: 100%;
   width: 100%;
-  background-color: $login-bg-color;
-  background: $login-bg; 
-  background-size: cover;
+  // background-color: $login-bg-color;
+  // background: $login-bg;
+  // box-shadow: inset 0 0 0 9999px rgba(27, 6, 28, 0.8);
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    left: 0;
+    right: 0;
+    background: #000;
+    background: $login-bg-color;
+    background: $login-bg;
+    background-size: cover;
+  }
+
+  &:before {
+    z-index: -1;
+    opacity: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#391347+0,23206d+100&0.9+15,0.5+51,0.9+85 */
+    background: -moz-linear-gradient(top, rgba(57,19,71,0.9) 0%, rgba(54,21,77,0.9) 15%, rgba(46,26,91,0.5) 51%, rgba(38,30,103,0.9) 85%, rgba(35,32,109,0.9) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(57,19,71,0.9) 0%,rgba(54,21,77,0.9) 15%,rgba(46,26,91,0.5) 51%,rgba(38,30,103,0.9) 85%,rgba(35,32,109,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(57,19,71,0.9) 0%,rgba(54,21,77,0.9) 15%,rgba(46,26,91,0.5) 51%,rgba(38,30,103,0.9) 85%,rgba(35,32,109,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6391347', endColorstr='#e623206d',GradientType=0 ); /* IE6-9 */
+  }
 
   > .container {
     position: relative;
@@ -18,12 +43,31 @@
       margin: 0 auto;
 
       .logo {
-        max-width: 100px;
-        margin: .5rem auto 1rem auto;
-        img {
-          width: 100px;
-          height: 100px;
+        // max-width: 100px;
+        height: 0;
+        position: relative;
+        // width: 200%;
+        h2 {
+          color: #8ee6ff;
+          text-align: center;
+          padding: 0;
+          font-size: 3.5em;
+          padding-left: 0.3em;
+          width: auto;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 15px;
+          font-weight: 500;
+          letter-spacing: 0.2em;
+          font-family: edunline;
         }
+
+        // margin: .5rem auto 1rem auto;
+        // img {
+        //   width: 100px;
+        //   height: 100px;
+        // }
       }
 
       .button {
